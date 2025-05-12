@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import { usePopper } from 'react-popper';
 
 import Panel from './Panel';
 

@@ -1,4 +1,6 @@
 import React, { useState, useRef } from 'react';
+import { usePopper } from 'react-popper';
+
 import Panel from './Panel';
 
 const Editor = () => {
@@ -12,6 +14,7 @@ const Editor = () => {
   const [colorHistory, setColorHistory] = useState(Array(10).fill("#ffffff"));
   const [resetKey, setResetKey] = useState(0);
   const canvasRef = useRef(null);
+  
 
   // Function to validate and set canvas width and height
   const validateCanvasSize = (value, setValue) => {
